@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .menu-section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+        .follow-me a {
+            margin: 0 10px;
+        }
+        .follow-me img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "5754b440-e0e8-411c-a13b-5632aa02994d", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "ec3db7a0-ca2b-449e-bb6b-f470481cd7ad", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Delicious Den</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container content" id="home">
+    <div class="jumbotron">
+        <img src="https://github.com/FarhaKousar1601/Delicious-Den-FoodieBot/blob/main/delicious_den.jpg?raw=true" alt="Delicious Den">
+    </div>
+</div>
+
+<div class="container content" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-section">
+        <h3>Snacks</h3>
+        <div class="row">
+            <div class="col-md-3 menu-item">
+                <img src="https://img.freepik.com/premium-photo/basket-french-fries-with-ketchup-ketchup_1277297-22065.jpg"
+                alt="French Fries">
+                <h4>French Fries</h4>
+                <p>Price: ₹40</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://img.freepik.com/premium-photo/aesthetic-dripping-tasty-pizza-slice-generative-ai_863013-2003.jpg?w=740" 
+                alt="Pizza">
+                <h4>Pizza</h4>
+                <p>Price: ₹50</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://img.freepik.com/free-photo/side-view-club-sandwich-with-salted-cucumbers-lemon-olives-round-white-plate_176474-3049.jpg" 
+                alt="Sandwich" width="500" height="500">
+                <h4>Sandwich</h4>
+                <p>Price: ₹50</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://cdn.pixabay.com/photo/2022/08/31/10/16/hamburger-7422961_1280.jpg" 
+                alt="Burger" width="500" height="500">
+                <h4>Burger</h4>
+                <p>Price: ₹50</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h3>Drinks</h3>
+        <div class="row">
+            <div class="col-md-3 menu-item">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/02/cafe-style-hot-coffee-recipe-1.jpg" alt="Hot Coffee">
+                <h4>Hot Coffee</h4>
+                <p>Price: ₹30</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfbDEPa5flLKe8Vb_nBUNDkBA5xDG_PjC7Vw&s"
+                alt="Hot Tea" width="500" height="500">
+                <h4>Hot Tea</h4>
+                <p>Price: ₹20</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/cold-coffee-recipe-2-500x500.jpg" alt="Cold Coffee">
+                <h4>Cold Coffee</h4>
+                <p>Price: ₹50</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://minimalistbaker.com/wp-content/uploads/2014/06/Perfect-Peach-Iced-Tea-SQUARE.jpg" 
+                alt="Iced Tea" width="500" height="500">
+                <h4>Iced Tea</h4>
+                <p>Price: ₹40</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h3>Main Course</h3>
+        <div class="row">
+            <div class="col-md-3 menu-item">
+                <img src="https://iowagirleats.com/wp-content/uploads/2014/10/Easy-Homemade-Burrito-Bowls-iowagirleats-Featured-srgb.jpg"
+                 alt="Mexican Bowl">
+                <h4>Mexican Bowl</h4>
+                <p>Price: ₹200</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://curlytales.com/wp-content/uploads/2019/05/33607321-DB22-4B77-8C5D-725202087124.jpeg" alt="Punjabi Thali">
+                <h4>Punjabi Thali</h4>
+                <p>Price: ₹150</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://curlytales.com/wp-content/uploads/2019/05/33607321-DB22-4B77-8C5D-725202087124.jpeg"
+                 alt="Chinese Platter">
+                <h4>Chinese Platter</h4>
+                <p>Price: ₹180</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+            <div class="col-md-3 menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdoTkJGppOpCQuTkBSh1TXgnn357_exGTGzw&s" 
+                alt="Dosa Combo">
+                <h4>Dosa Combo</h4>
+                <p>Price: ₹150</p>
+                <a class="btn btn-dark" href="#" role="button">Order Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container content" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to Delicious Den, where we serve a variety of delicious dishes made with fresh ingredients and lots of loveas well as 100% veg. Our mission is to provide our customers with a delightful dining experience, whether you are here for a quick snack or a full meal. Come and taste the difference at Delicious Den!</p>
+</div>
+
+<div class="container content" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@deliciousden.com</p>
+    <p>Phone: +91 12345 67890</p>
+    <p>Address: 123 Food Street, Bangalore, India</p>
+</div>
+
+<footer>
+    <p>Follow Me:</p>
+    <div class="follow-me">
+        <a href="https://github.com/Ruchi751" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn"></a>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
